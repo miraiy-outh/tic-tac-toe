@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Крестики-нолики</title>
+</head>
+
+<body>
+    <div class="game__container">
+        <h1 class="title">Крестики-нолики</h1>
+        <div class="text-container">
+            <p class="move__cross">Ход крестиков</p>
+            <p class="move__zero">Ход ноликов</p>
+            <p class="win__cross">Выиграли крестики!</p>
+            <p class="win__zero">Выиграли нолики!</p>
+            <p class="nowin">Ничья!</p>
+        </div>
+        <div class="game-board">
+            <div class="grid-cell" id="0">
+                <img class='game__icon cross' id="cross0" src="icons/cross.svg">
+                <img class='game__icon zero' id="zero0" src="icons/zero.svg">
+            </div>
+            <div class="grid-cell" id="1">
+                <img class='game__icon cross' id="cross1" src="icons/cross.svg">
+                <img class='game__icon zero' id="zero1" src="icons/zero.svg">
+            </div>
+            <div class="grid-cell" id="2">
+                <img class='game__icon cross' id="cross2" src="icons/cross.svg">
+                <img class='game__icon zero' id="zero2" src="icons/zero.svg">
+            </div>
+            <div class="grid-cell" id="3">
+                <img class='game__icon cross' id="cross3" src="icons/cross.svg">
+                <img class='game__icon zero' id="zero3" src="icons/zero.svg">
+            </div>
+            <div class="grid-cell" id="4">
+                <img class='game__icon cross' id="cross4" src="icons/cross.svg">
+                <img class='game__icon zero' id="zero4" src="icons/zero.svg">
+            </div>
+            <div class="grid-cell" id="5">
+                <img class='game__icon cross' id="cross5" src="icons/cross.svg">
+                <img class='game__icon zero' id="zero5" src="icons/zero.svg">
+            </div>
+            <div class="grid-cell" id="6">
+                <img class='game__icon cross' id="cross6" src="icons/cross.svg">
+                <img class='game__icon zero' id="zero6" src="icons/zero.svg">
+            </div>
+            <div class="grid-cell" id="7">
+                <img class='game__icon cross' id="cross7" src="icons/cross.svg">
+                <img class='game__icon zero' id="zero7" src="icons/zero.svg">
+            </div>
+            <div class="grid-cell" id="8">
+                <img class='game__icon cross' id="cross8" src="icons/cross.svg">
+                <img class='game__icon zero' id="zero8" src="icons/zero.svg">
+            </div>
+        </div>
+
+        <button class="new-game">Новая игра</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

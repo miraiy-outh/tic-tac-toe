@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    --text-color: #776e65;
+    --grid-cell-color: #eee4da;
+    --container-color: #bbada0;
+    --bg-color: #faf8ef;
+    --cross-color: #FA9743;
+    --zero-color: #3799FA;
+    --button-bg-color: #9E97B2;
+    --button-color: white;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.title {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.text-container * {
+    display: none;
+}
+
+.move__cross,
+.win__cross {
+    color: var(--cross-color);
+}
+
+.move__zero,
+.win__zero {
+    color: var(--zero-color);
+}
+
+.game-board {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    padding: 16px;
+    gap: 16px;
+    background-color: var(--container-color);
+    border-radius: 16px;
+}
+
+.grid-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grid-cell-color);
+    border-radius: 8px;
+}
+
+.game__icon {
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+
+.new-game {
+    margin-top: 32px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+}
+
+.visible {
+    display: block;
+}
